@@ -1082,12 +1082,12 @@ $('.js-open-login').on('click', function () {
 });
 "use strict";
 "use strict";
-"use strict";
 
 $('.testimonals__slider').flexslider({
     animation: "fade",
     directionNav: false
 });
+"use strict";
 "use strict";
 "use strict";
 
