@@ -4963,6 +4963,9 @@ input[type='submit'].styler[disabled] {
   .price__item {
     width: 100%;
   }
+  .price__item:first-child {
+    margin-right: 0;
+  }
 }
 .price__body {
   padding: 10px;
