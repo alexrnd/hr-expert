@@ -4933,9 +4933,15 @@ input[type='submit'].styler[disabled] {
   font-family: 'AvenirNext-DemiBold';
 }
 .price__price .num {
-  font-size: 50px;
-  line-height: 41px;
+  font-size: 60px;
+  line-height: 50px;
   font-family: 'AvenirNext-DemiBold';
+}
+@media only screen and (max-width: 480px) {
+  .price__price .num {
+    font-size: 50px;
+    line-height: 44px;
+  }
 }
 .price__price > * {
   vertical-align: bottom;
@@ -4984,7 +4990,14 @@ input[type='submit'].styler[disabled] {
   color: #fff;
 }
 .price__ttl {
-  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 55px;
+}
+@media only screen and (max-width: 480px) {
+  .price__ttl {
+    font-size: 50px;
+    line-height: 55px;
+  }
 }
 .price__subttl {
   font-size: 27px;
