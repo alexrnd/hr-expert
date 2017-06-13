@@ -1013,6 +1013,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				$('#login-form').validate({});
 		});
 })(jQuery);
+"use strict";
+"use strict";
 /*twttr.widgets.createTweet(
   '805716087056666625',
   document.getElementById('twitter-timeline'),
@@ -1075,6 +1077,7 @@ $(window).scroll(function () {
     $('.menu--main').addClass('hide');
   }
 });
+"use strict";
 'use strict';
 
 $('.js-open-login').on('click', function () {
@@ -1082,12 +1085,12 @@ $('.js-open-login').on('click', function () {
 });
 "use strict";
 "use strict";
+"use strict";
 
 $('.testimonals__slider').flexslider({
     animation: "fade",
     directionNav: false
 });
-"use strict";
 "use strict";
 "use strict";
 
