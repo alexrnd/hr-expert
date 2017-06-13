@@ -4969,6 +4969,7 @@ input[type='submit'].styler[disabled] {
 }
 .price__body {
   padding: 10px;
+  padding-bottom: 15px;
   font-size: 16px;
   line-height: 21px;
 }
