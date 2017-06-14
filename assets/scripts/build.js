@@ -987,32 +987,43 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 'use strict';
 
 (function ($) {
-		function is_mobile() {
-				return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-				);
-		}
+  function is_mobile() {
+    return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    );
+  }
 
-		if (is_mobile()) {} else {
-				var gw_width = !/MSIE [6-8]/i.test(navigator.userAgent) ? window.innerWidth : $(window).width() + 17;
-				$('body').width(gw_width);
-				$('header').width(gw_width);
-				$(window).on('resize', function () {
-						var gw_width = !/MSIE [6-8]/i.test(navigator.userAgent) ? window.innerWidth : $(window).width() + 17;
-						$('body').width(gw_width);
-						$('header').width(gw_width);
-				});
-		}
-		$('document').ready(function () {
-				$('input[type="checkbox"],select').styler();
-				$('input:not([type="checkbox"]):not([type="submit"]):not([type="radio"])').on('focus', function () {
-						$(this).addClass('focused');
-				});
-				$('input:not([type="checkbox"]):not([type="submit"]):not([type="radio"])').on('blur', function () {
-						$(this).removeClass('focused');
-				});
-				$('#login-form').validate({});
-		});
+  if (is_mobile()) {} else {
+    var gw_width = !/MSIE [6-8]/i.test(navigator.userAgent) ? window.innerWidth : $(window).width() + 17;
+    $('body').width(gw_width);
+    $('header').width(gw_width);
+    $(window).on('resize', function () {
+      var gw_width = !/MSIE [6-8]/i.test(navigator.userAgent) ? window.innerWidth : $(window).width() + 17;
+      $('body').width(gw_width);
+      $('header').width(gw_width);
+    });
+  }
+  $('document').ready(function () {
+    $('input[type="checkbox"],input[type="radio"],select').styler();
+    $('input:not([type="checkbox"]):not([type="submit"]):not([type="radio"])').on('focus', function () {
+      $(this).addClass('focused');
+    });
+    $('input:not([type="checkbox"]):not([type="submit"]):not([type="radio"])').on('blur', function () {
+      $(this).removeClass('focused');
+    });
+    $('.form').each(function () {
+      $(this).validate();
+    });
+  });
 })(jQuery);
+"use strict";
+
+$(".accordion").each(function () {
+  $(this).accordion({
+    collapsible: true,
+    header: ".accordion__ttl",
+    heightStyle: "content"
+  });
+});
 "use strict";
 "use strict";
 /*twttr.widgets.createTweet(
